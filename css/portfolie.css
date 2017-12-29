@@ -29,6 +29,15 @@ p {
     margin: 0.5em;
 }
 
+.demobox {
+    border: none;
+    outline: none;
+    background-color: darkslategray;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
 .grafik {
     display: inline-block;
     width: 200px;

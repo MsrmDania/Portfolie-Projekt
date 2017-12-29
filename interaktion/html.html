@@ -78,6 +78,64 @@
             </div>
         </nav>
     </header>
+    <div class="pagewrap">
+        <h2>HTML</h2>
+        <hr>
+        <p>HTML er strukturen på et website, og bestemmer hvordan den rå version af hjemmesiden ser ud. HTML inkluderer overskrifter, brødtekster, billeder og links til andre sider. HTML arbejder i Tags, som hjælper søgemaskiner med at vise relevant indhold og bygger strukturen op inde i HTML’en. Tags består af Meta Tags og Semantiske Tags.</p>
+    </div>
+    <div class="col-xs-12 col-sm-9">
+        <h3>Tags</h3>
+        <section>
+            <ul>
+                <li>Meta Tags er tags som har en usynlig effekt på HTML, men fortællere serveren og browseren <br>essentiel information, så som sprog på siden og forbindelse til CSS.</li>
+                <li>Semantiske Tags er vigtig, og bliver anvendt til søgemaskine optimering. Semantiske tags<br>fortæller søgemaskinen, hvilke sektioner af websitet den skal fremvise i preview, og finder <br>relevant information i teksten.</li>
+            </ul>
+            <p>F.eks. Det semantiske tag, section er en af de mest udbredte semantiske tags. Tagget fungerer som en division, eller div, deler ikke kun indeholder op og fortæller søgemaskinen at brødtekst eller indhold starter og slutter inden for tagget.</p>
+            <p><strong>Et eksempel:</strong></p>
+            <p class="demobox">&lt;html lang="da"&gt;<br> &lt;head&gt;
+                <br> &lt;meta charset="utf-8"&gt;<br> &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br> &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br> &lt;link href="../css/bootstrap.min.css" rel="stylesheet"&gt;<br> &lt;link href="../css/portfolie.css" rel="stylesheet"&gt;<br> &lt;/head&gt;
+            </p>
+
+        </section>
+    </div>
+    <div class="col-xs-12 col-sm-9">
+        <h3>Billeder og Links</h3>
+        <p>Med HTML er det muligt at indsætte billeder og links direkte ind i websitens rå kode. </p>
+        <section>
+            <h4>Billeder</h4>
+            <p>For at sætte et billede ind i et HTML dokument anvender man et img tag. Et eksempel:</p>
+            <p class="demobox">&lt;img src=”billede” alt=”billede tekst”&gt;</p>
+            <p>I tilfælde af at browseren af en eller anden grund ikke kan loade billedet in på websiten anvender siden alternativ tekst, eller ”alt”, hvor man kan udfylde en lille beskrivelse af billedet. Alt tekst bruges også til skærmlæsere.</p>
+            <p>”src” fortæller browseren kilden på billedet, altså dens lokation inde i web-serveren, eller hvis den er hentet online.</p>
+        </section>
+    </div>
+    <div class="col-xs-12 col-sm-9">
+        <h3>Links</h3>
+        <p>Links er essentielle for at navigere rundt mellem websites, men kan også anvendes som intern navigation på din egen side. For at lave et navigationslink til din skal du anvende et a href link, f.eks.:</p>
+        <section>
+            <p class="demobox">&lt;a href=”http://www.hjemmeside.dk”&gt;Tekst som kan klikkes&lt;/a&gt;</p>
+            <p>Ved at angive en klikbar tekst, erstattet et linkets udseende med teksten.</p>
+            <p>A indikerer at det er et link.</p>
+            <p>Href fortæller browseren hvor linket fører hen.</p>
+        </section>
+    </div>
+    <div class="col-xs-12 col-sm-9">
+        <h3>Class og ID</h3>
+        <section>
+            <p>Class og ID er anvendt til at skabe funktioner for CSS med, Class bliver anvendt til elementer på siden, som gentager sig flere gange igennem hele sidens funktion, mens ID beskriver ét specifikt element og hvilke CSS ændringer den skal have.</p>
+            <p><strong>Et Eksempel:</strong></p>
+            <p class="demobox">&lt;div class="en_class"&gt;&lt;/div&gt;<br> &lt;div id="et_ID"&gt;&lt;/div&gt;</p>
+            <p>Indhold skrevet inden for Class og ID tags bliver påvirket af deres CSS varianter.</p>
+        </section>
+    </div>
+    <div class="col-xs-12 col-sm-9">
+        <h3>Kilder</h3>
+        <section class="kildefelt">
+            Niels Østergaard - Interaktionsudvikling - Erhvervs Akadami Dania Skive
+        </section>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Til top">Top</button>
+    <footer>Maiken Mikkelsen - 1. Semester Multimediedesigner</footer>
 </body>
 
 </html>
