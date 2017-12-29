@@ -25,10 +25,8 @@ h4 {
     font-family: 'Vidaloka', serif;
 }
 
-#wheel {
-    width: auto;
-    height: auto;
-    padding: 1em;
+p {
+    margin: 0.5em;
 }
 
 .grafik {
