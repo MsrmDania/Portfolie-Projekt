@@ -1,0 +1,6 @@
+<div class="col-xs-12 col-sm-9">
+<h3>titel</h3>
+<section>
+tekst
+</section>
+</div>
