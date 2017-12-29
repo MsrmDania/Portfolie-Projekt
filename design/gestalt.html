@@ -11,6 +11,7 @@
     <link href="../css/portfolie.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/portfolie.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
 </head>
 
@@ -18,53 +19,172 @@
     <header>
         <h1>Portfolie - Multimediedesigner</h1>
         <!--Navigationsbar-->
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="../index.html">Forside <span class="glyphicon glyphicon-home"> </span></a>
+                    <!--Burgermenu-->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+                        <span class="icon-bar">
+                            </span>
+                        <span class="icon-bar">
+                            </span>
+                        <span class="icon-bar">
+                            </span>
+                        </button>
+                    <!--Burgermenu Slut-->
+                    <a class="navbar-brand" href="../index.html"><span class="glyphicon glyphicon-home"> </span></a>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Design og Visualisering <span class="glyphicon glyphicon-pencil"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="farveteori.html">Farveteori</a></li>
-                            <li><a href="gestalt.html">Gestalt og Designprincipper</a></li>
-                            <li><a href="typografi.html">Typografi</a></li>
-                            <li><a href="adobe.html">Adobe</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Interaktionsudvikling <span class="glyphicon glyphicon-cog"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../interaktion/www.html">World Wide Web</a></li>
-                            <li><a href="../interaktion/html.html">HTML</a></li>
-                            <li><a href="../interaktion/css.html">CSS</a></li>
-                            <li><a href="../interaktion/git.html">GIT</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Kommunikation <span class="glyphicon glyphicon-globe"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../kommunikation/medie.html">Mediesociologi</a></li>
-                            <li><a href="../kommunikation/produktion.html">Produktionsmodeller</a></li>
-                            <li><a href="../kommunikation/ide.html">Idé-generering</a></li>
-                            <li><a href="../kommunikation/story.html">Storytelling | Tekst som Medie</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Virksomhed <span class="glyphicon glyphicon-briefcase"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../virksomhed/value.html">Value Propositions</a></li>
-                            <li><a href="../virksomhed/styring.html">Projektstyring</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Mine Projekter <span class="glyphicon glyphicon-blackboard"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../projekt/designthinking.html">Design-Thinking</a></li>
-                            <li><a href="../projekt/onepage.html">One-Page</a></li>
-                            <li><a href="../projekt/portfolie.html">Portfolie</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Design og Visualisering <span class="glyphicon glyphicon-pencil"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="farveteori.html">Farveteori</a></li>
+                                <li><a href="gestalt.html">Gestalt og Designprincipper</a></li>
+                                <li><a href="typografi.html">Typografi</a></li>
+                                <li><a href="adobe.html">Adobe</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Interaktionsudvikling <span class="glyphicon glyphicon-cog"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../interaktion/www.html">World Wide Web</a></li>
+                                <li><a href="../interaktion/html.html">HTML</a></li>
+                                <li><a href="../interaktion/css.html">CSS</a></li>
+                                <li><a href="../interaktion/git.html">GIT</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Kommunikation <span class="glyphicon glyphicon-globe"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../kommunikation/medie.html">Mediesociologi</a></li>
+                                <li><a href="../kommunikation/produktion.html">Produktionsmodeller</a></li>
+                                <li><a href="../kommunikation/ide.html">Idé-generering</a></li>
+                                <li><a href="../kommunikation/story.html">Storytelling | Tekst som Medie</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Virksomhed <span class="glyphicon glyphicon-briefcase"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../virksomhed/value.html">Value Propositions</a></li>
+                                <li><a href="../virksomhed/styring.html">Projektstyring</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Mine Projekter <span class="glyphicon glyphicon-blackboard"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../projekt/designthinking.html">Design-Thinking</a></li>
+                                <li><a href="../projekt/onepage.html">One-Page</a></li>
+                                <li><a href="../projekt/portfolie.html">Portfolie</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
+    <div class="pagewrap">
+        <h2>Gestalt og Designprincipper</h2>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Simplicity</h3>
+            <section>
+                <p>
+                    Simplicity, ligesom KISS princippet (“Keep it simple, stupid.”) burde være nøglen i mest design. Simplicity skaber ro og letlæselighed i et design, og gør det nemmere at kommunikerer et design til et publikum. Vi opfatter simple figurer bedre end komplekse elementer, derfor er simplicity vigtigt i design.
+                </p>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>White space</h3>
+            <section>
+                <p>
+                    Whitespace kan være alle farver og baggrundsbilleder, og består af alt der ligger bag indholdet, og er med til at skabe fokus på de essentielle i designet ved at bevæge øjet væk fra det tomme. Whitespace kan også skabe helheder og mønstre, ved at forme whitespace omkring et objekt, så som Rubins Vase.
+                </p>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Proximity</h3>
+            <section>
+                <p>
+                Proximity er relationen imellem flere objekter, som er med til at skabe en helhed. Proximity er relativ, og kan variere efter sammenhæng i designet. En gruppe kan være I proximity, uden at være i et mønster hvis de blot er i nærheden af hinanden, men sammenlignet med en gruppe af objekter i et mønster, så ville deres proximity være svag.
+                    </p>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Continuity</h3>
+            <section>
+                <p>
+                Continuity er når øjet bliver tvunget til at bevæge sig I en bestemt retning, og forsætte til et andet element. Det kan forbindes med at være den røde tråd igennem et design, og er et designprincip som fungere bindende.
+                    </p>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Symmetry</h3>
+            <section>
+                <p>
+                Symmetry, eller symmetri giver ro og harmoni I et design, men kan være visuelt kedeligt for et publikum. Asymmetri er modsætningen, Hvor i stedet for at have elementer som er spejlet, roteret eller oversat, så går asymmetri ud på at elementer er ude af en helhed eller kontekst.
+                    </p>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Closure</h3>
+            <section>
+                <p>
+                Closure, eller “lukkethed” på dansk er med til at give et overblik I et design. Det er en del af den naturlige visuelle opfattelse, som overlader dele af designet til et naturligt ønske om at fuldende ting. Ved at anvende closure, skaber man visuelt interessante elementer, som kan være med til at skabe blikfang i et design. Komplekse designs med closure kan skabe mere forvirring end gavn, closure er derfor godt forbundet med simplicity.
+                    </p>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Golden Section</h3>
+            <section>
+                <p>
+                Golden section hedder på dansk den gyldne spiral, og er et værktøj som er anvendt til at finde det gyldne snit I et element. Det gyldne snit forekommer naturligt, men udtrykket blev først udviklet og bevidst brugt i design senere. Den gyldne spiral er baseret på en matematisk form, kaldt Fibonacci-tallene, som ved opsætning kan være med til at give et velfungerende æstetisk udtryk i et design.
+                    </p>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Grids</h3>
+            <section>
+                <p>
+                Et Grid er et usynligt gitter, som opdeler elementer I forskellige sektioner, og kan forekomme på bade vertikal og horisontal plan. Grids giver et overskueligt og velstruktureret indtryk af et design, og anvendes som oftest på sider for at skabe et læse- og brugervenligt design.
+                    </p>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Figure-ground</h3>
+            <section>
+                <p>
+                Figure-ground relationen er et udtryk for, hvordan vi naturligt skelner mellem figurer i forgrund og baggrund. Alt grafisk arbejde inkorporer figure-ground, da det er vigtigt at kunne skelne imellem to elementer, for at kunne for kommunikeret budskabet.
+                    </p>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Common fate</h3>
+            <section>
+                <p>
+                Common fate er udtrykket for elementer som opfører sig på same made, som f.eks. bevægelse i samme retning. Common fate er derfor med til at udgører måden man opfatter en helhed på, og er en instinktiv fornemmelse.
+                    </p>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Rule of Thirds</h3>
+            <section>
+                <p>
+                Rule of thirds er at man indeler et grafisk element I 9 lige store dele, ved at anvende to vandrette og to lodrette linjer igennem elementet. Ud af det kommer der fire skæringspunkter, hvor af disse punkter udgør hvor øjet naturligt ligger fokus, når man ser på et billede.
+                </p>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Similarity</h3>
+            <section>
+                <p>
+                Similarity er lighed I et element, som er med til at skabe en rød tråd igennem et design, ligeledes med continuity. Similarity vil gruppere elementer som er ens til hinanden naturligt, selv hvis de ikke er direkte grupperede, men stadig står sammen i en helhed.
+                </p>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Kilder</h3>
+            <section class="kildefelt">
+                <p>
+                "The Principles and Processes of Interactive Design" - Jamie Steane<br> "The Language of Graphic Design" - Richard Poulin<br> Carsten Kjeldsen Bogner - Design Teori - Erhvervs Akadami Dania Skive<br>
+                </p>
+            </section>
+        </div>
+    </div>
+    <footer>Maiken Mikkelsen - 1. Semester Multimediedesigner</footer>
 </body>
-
 </html>

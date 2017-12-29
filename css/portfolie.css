@@ -5,9 +5,41 @@ h1 {
     background-color: darkslategray;
     color: #FFF;
 }
+
+h2 {
+    color: darkslategray;
+    font-family: 'Vidaloka', serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 4em;
+}
+
+h3 {
+    color: darkslategray;
+    font-family: 'Vidaloka', serif;
+}
+
+h4 {
+   color: darkslategray;
+    font-family: 'Vidaloka', serif; 
+}
+
+#wheel {
+    width: auto;
+    height: auto;
+    padding: 1em;
+}
+
+.pagewrap {
+    text-align: center;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
 .dropdown-menu .nav {
     color: darkslategray;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 @media (max-width: 1200px) {
     h1 {
@@ -42,3 +74,38 @@ h1 {
 	  transform: rotate(-45deg);
 }
 /* CSS Animation for Burgermenu slutter her */
+/*Bund felter starter her*/
+
+.kildefelt {
+    padding-bottom: 1em;
+}
+
+footer {
+    background-color: darkslategray;
+    padding: 1em;
+    font-family: 'Vidaloka', serif;
+    color: #FFF;
+    text-align: center;
+    clear:both;
+    overflow:hidden;
+}
+/*Til top knap starter her*/
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    outline: none;
+    background-color: darkslategray; 
+    color: white;
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#myBtn:hover {
+    background-color: #555; 
+}
+/*Til Top Knap slutter her*/

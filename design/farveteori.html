@@ -11,60 +11,168 @@
     <link href="../css/portfolie.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/portfolie.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header id="top">
         <h1>Portfolie - Multimediedesigner</h1>
         <!--Navigationsbar-->
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="../index.html">Forside <span class="glyphicon glyphicon-home"> </span></a>
+                    <!--Burgermenu-->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+                        <span class="icon-bar">
+                            </span>
+                        <span class="icon-bar">
+                            </span>
+                        <span class="icon-bar">
+                            </span>
+                        </button>
+                    <!--Burgermenu Slut-->
+                    <a class="navbar-brand" href="../index.html"><span class="glyphicon glyphicon-home"> </span></a>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Design og Visualisering <span class="glyphicon glyphicon-pencil"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="farveteori.html">Farveteori</a></li>
-                            <li><a href="gestalt.html">Gestalt og Designprincipper</a></li>
-                            <li><a href="typografi.html">Typografi</a></li>
-                            <li><a href="adobe.html">Adobe</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Interaktionsudvikling <span class="glyphicon glyphicon-cog"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../interaktion/www.html">World Wide Web</a></li>
-                            <li><a href="../interaktion/html.html">HTML</a></li>
-                            <li><a href="../interaktion/css.html">CSS</a></li>
-                            <li><a href="../interaktion/git.html">GIT</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Kommunikation <span class="glyphicon glyphicon-globe"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../kommunikation/medie.html">Mediesociologi</a></li>
-                            <li><a href="../kommunikation/produktion.html">Produktionsmodeller</a></li>
-                            <li><a href="../kommunikation/ide.html">Idé-generering</a></li>
-                            <li><a href="../kommunikation/story.html">Storytelling | Tekst som Medie</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Virksomhed <span class="glyphicon glyphicon-briefcase"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../virksomhed/value.html">Value Propositions</a></li>
-                            <li><a href="../virksomhed/styring.html">Projektstyring</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Mine Projekter <span class="glyphicon glyphicon-blackboard"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../projekt/designthinking.html">Design-Thinking</a></li>
-                            <li><a href="../projekt/onepage.html">One-Page</a></li>
-                            <li><a href="../projekt/portfolie.html">Portfolie</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Design og Visualisering <span class="glyphicon glyphicon-pencil"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="farveteori.html">Farveteori</a></li>
+                                <li><a href="gestalt.html">Gestalt og Designprincipper</a></li>
+                                <li><a href="typografi.html">Typografi</a></li>
+                                <li><a href="adobe.html">Adobe</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Interaktionsudvikling <span class="glyphicon glyphicon-cog"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../interaktion/www.html">World Wide Web</a></li>
+                                <li><a href="../interaktion/html.html">HTML</a></li>
+                                <li><a href="../interaktion/css.html">CSS</a></li>
+                                <li><a href="../interaktion/git.html">GIT</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Kommunikation <span class="glyphicon glyphicon-globe"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../kommunikation/medie.html">Mediesociologi</a></li>
+                                <li><a href="../kommunikation/produktion.html">Produktionsmodeller</a></li>
+                                <li><a href="../kommunikation/ide.html">Idé-generering</a></li>
+                                <li><a href="../kommunikation/story.html">Storytelling | Tekst som Medie</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Virksomhed <span class="glyphicon glyphicon-briefcase"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../virksomhed/value.html">Value Propositions</a></li>
+                                <li><a href="../virksomhed/styring.html">Projektstyring</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Mine Projekter <span class="glyphicon glyphicon-blackboard"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../projekt/designthinking.html">Design-Thinking</a></li>
+                                <li><a href="../projekt/onepage.html">One-Page</a></li>
+                                <li><a href="../projekt/portfolie.html">Portfolie</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
+    <div class="Pagewrap">
+        <div class="col-xs-12 col-sm-9">
+            <h2>Farveteori</h2>
+            <section>
+                Farveteori består af alt fra farvecirklen og forståelse af farvesammenhæng til psykologien bag forskellige farver, og deres kulturelle betydninger. Anvendelse af farveteori er essentielt for at skabe et velformuleret design, og kan have stor betydning for det æstetiske blikfang hos modtageren.
+            </section>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9">
+                    <h3>Farvecirklen</h3>
+                    <figure>
+                        <img id="wheel" src="../grafik/colorwheel.png" alt="Farvehjulet">
+                        <figcaption>Kilde: <a href="https://blog.asmartbear.com/color-wheels.html">blog.asmartbear.com</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                    <section>
+                        <ul>
+                            <li>Inderst i farvecirklen er de tre primære farver, primære farver kan ikke laves ved at kombinere andre farver.</li>
+                            <li>Sekundære farver får du af at blande to primære farver, så som lilla fra rød og blå.</li>
+                            <li>Den yderste cirkel består af tertiære, primære og sekundære farver, tertiære farver er resultatet af at blande en primær og en sekundær farve.</li>
+                        </ul>
+                    </section>
+                    <div class="col-xs-12 col-sm-9">
+                        <h3>Farveskemaer</h3>
+                        <section>
+                            Farveskemaer er med til at finde harmoni og balance i en farvesammensætning, og der findes mange værktøjer som kan hjælpe dig med at skabe en harmonisk farveopsætning, så som <a href="https://color.adobe.com/da/create/color-wheel/">color.adobe.com</a> <br>Nogle eksempler:
+
+                            <h4>Monokrom</h4>
+                            <ul>
+                                <li>Mild og behagelig at se på. Består af en farve uden variation.</li>
+                            </ul>
+                            <h4>Komplementær</h4>
+                            <ul>
+                                <li>Er god til at fremhæve med, så som fokus punkter i designet. Skaber et sammenhængende indtryk. Består af to "modsatte" farver.</li>
+                            </ul>
+                            <h4>Analog</h4>
+                            <ul>
+                                <li>Harmonisk og giver et blidt indtryk, består af variationer af den samme farve. Dermed tone-varianter.</li>
+                            </ul>
+                        </section>
+                        <div class="col-xs-12 col-sm-9">
+                            <h3>Hue, Saturation og Brightness</h3>
+                            <section>
+                                Kulør, mætning og lyshed som elementerne er kaldt på dansk, er hvert for sig med til at bestemme udtrykket i et grafisk design, som tilsammen giver den farvemæssige helhed.
+                                <br>
+                                <h4>Hue</h4>
+                                <p>Kulør er den farve, som man tager udgangspunkt i, før man anvender mætning og lyshed. </p>
+                                <h4>Saturation</h4>
+                                <p>Mætning er mængden af grå tilføjet i farven, for at trække kulør ud af farven, og kan gå fra ren kulør til helt grå. Jo mere grå man tilføjer til en farve, jo mere dæmpes den.</p>
+                                <h4>Brightness</h4>
+                                <p>Lyshed er mængden af sort eller hvid i en farve, og diktere hvor mørk eller lys farvens tone er. Sort gør farven mørkere, og hvid gør farven lysere.</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                    <h3>Farvesammensætning</h3>
+                    <section>
+                        Farvers indtryk ændres baseret på deres omgivelser. Et eksempel, farver med komplementær kontrast fremhæver begge farver, imens en analog farvesammensætning ville dæmpe indtrykket af begge farveelementer.
+                    </section>
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                    <h3>Farvepsykologi og Kultur</h3>
+                    <section>
+                        Farver har i mange, hvis ikke alle kulturer en betydning i større eller mindre omfang. Forståelsen for farver variere ikke kun fra forskellige kulturer, men også for individer. Det er derfor vigtigt at tage farvebetydning i betragtning for ens designmæssige valg, og hvilken demografi som målgruppen ligger i.
+                        <h4>Betydning</h4>
+                        <p>Betydning af farver kan varier kraftigt fra person til person eller igennem forskellige kulturer. Her i nogle personlige opfattelser på farvebetydninger:<br></p>
+                        <ul>
+                            <li>Gul – Solskin, varme, advarsel</li>
+                            <li>Rød – Fare, kærlighed, vrede</li>
+                            <li>Grøn – Natur, harmoni</li>
+                            <li>Orange – Glæde, styrke</li>
+                            <li>Blå – Stilhed, rolighed, kulde</li>
+                            <li>Lilla – Overflødighed, overskud, kreativitet</li>
+                            <li>Sort – Død, mørke, stilhed</li>
+                            <li>Hvid – Renlighed</li>
+                            <li>Grå – Stilhed, kedsomhed</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                    <h3>Kilder</h3>
+                    <section class="kildefelt">
+                        "The Principles and Processes of Interactive Design" - Jamie Steane<br>
+                        "The Language of Graphic Design" - Richard Poulin<br>
+                        Carsten Kjeldsen Bogner - Design Teori - Erhvervs Akadami Dania Skive<br>
+                    </section>
+                </div>
+                <button onclick="topFunction()" id="myBtn" title="Til top">Top</button>
+            </div>
+        </div>
+    </div>
+    <footer>Maiken Mikkelsen - 1. Semester Multimediedesigner</footer>
 </body>
 
 </html>
