@@ -53,6 +53,11 @@ button {
     padding: 0.4em;
 }
 
+.grafik_stor {
+    width: 100%
+}
+
+
 #kode_demo {
     position: relative;
 }
