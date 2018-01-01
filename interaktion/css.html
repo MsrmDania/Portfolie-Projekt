@@ -78,6 +78,72 @@
             </div>
         </nav>
     </header>
+    <div class="pagewrap">
+        <h2>CSS</h2>
+        <section>
+            <p>CSS eller ”Cascading Style Sheets” skaber kontrol over udseende af HTML, derved struktur og udseende. ”Styles” angives som ”Rules”, kan navngives og refereres i HTML. </p>
+            <ul>
+                <li>Et Style Sheet er en samling af ”Rules”</li>
+                <li>Cascading henviser til regler, og hvornår hvilke styles glæder.</li>
+            </ul>
+        </section>
+        <hr>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Om CSS</h3>
+            <section>
+                <p>CSS var udviklet af Håkon Wium Lie, og blev senere adopteret af World Wide Web Consortium, som senere tog sig af standardiseringsarbejdet det gjorde CSS til hvad det er i dag. </p>
+                <ul>
+                    <li>CSS var først understøttet af Internet Explorer 3 (IE3)</li>
+                    <li>Netscape 3 gjorde det kort tid efter, men havde mange fejl som forringede bruger oplevelsen og ledte til Browser Krigen</li>
+                    <li>Standarden for CSS har udviklet sig meget siden den første version.</li>
+                </ul>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Måder at anvende CSS</h3>
+            <section>
+                <p>Embedded CSS og Link CSS er to forskellige formater, der et også muligheden for Inline CSS, men bryder strukturen og kan skabe en rodet helhed. </p>
+                <ul>Embedded CSS er integreret i HTML, og er del af et ”Style” tag.</ul>
+                <ul>Link CSS referere til en separat CSS Fil, og linkes til op i Meta Tags i HTML filen.</ul>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Opbygning af CSS</h3>
+            <section>
+                <p>CSS er delt op i nogle helt faste elementer.</p>
+                <p>Først har vi en selector, det er den, der fortæller, hvad der skal styles på. Her på billedet er det fx alle links.<br>Derefter kommer deklaration start {. Inden i den er selve deklarationen, den består af en property og en value. Property er det, er skal ændres ved selectoren, og value er det det skal ændres til. Efter deklarationen, kommer deklaration slut }.<br>Der kan sagtens være flere deklarationer per HTML element. Her det bare vigtigt at afslutte hver enkelt deklaration med semi-kolon.<br>CSS er opdelt i faste elementer, og er altid bygget op på den samme måde. Først anvender man en selector, det kan være en class eller en Id angivet i HTML filen, som man så anvender CSS Selectors til at kalde på. <br>Derefter anvender man deklaration start, som er en lille klamme ( { ) som indikere hvor koden til CSS starter. Her består alle CSS-elementer af en egenskab og en værdi, som for eksempel at sætte en background-color.<br> <strong>Et Eksempel:</strong></p>
+                <p class="demobox">#id {<br> Background-color: #FFF; <strong>”Property: Value;” (Egenskab og Værdi)</strong> <br>}
+                </p>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Selectors</h3>
+            <h4>Id</h4>
+            <section>
+                <p>Id, eller # kalder på er specifikt element inde i HTML filen, og redigere kun dén, når den bliver kaldt på. <br>ID angives inde i HTML i elementets start tag, som f.eks.<br></p>
+                <p class="demobox">&lt;div id="et_id"&gt;</p>
+                <p>Id bliver kaldt på inde i CSS således:</p>
+                <p class="demobox">#id {<br> Property: Value;<br> }
+                </p>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h4>Class</h4>
+            <section>
+                <p>Class er anvendt til at kalde på et gentagende element, og bliver derfor brugt til at skabe identisk udseende igennem hele websitets design. <br>For at angive en class, gentager man den samme funktion i HTML som med ID, og erstatter ”id=” med ”class=”, f.eks.</p>
+                <p class="demobox">&lt;div class="en_class"&gt;</p>
+                <p>Som kommer til at kaldes på således inde i CSS:</p>
+                <p class="demobox">.class {<br> Property: Value;<br> }
+                </p>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>CSS Grids</h3>
+            <section>
+                <p>CSS Grids er den seneste store udviking og den nye standard inden for CSS og bliver som omtalt som revolutionerende inden for sin responsive designteknik.</p>
+            </section>
+        </div>
+    </div>
 </body>
 
 </html>
