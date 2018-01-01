@@ -29,6 +29,14 @@ p {
     margin: 0.5em;
 }
 
+button {
+    background-color: darkslategray !important;
+    color: #FFF !important;
+    border-radius: 6px !important;
+    border: none !important;
+    outline: none !important;
+}
+
 .demobox {
     border: none;
     outline: none;
@@ -42,15 +50,29 @@ p {
     display: inline-block;
     width: 200px;
     height: 200px;
+    padding: 0.4em;
+}
+
+#kode_demo {
+    position: relative;
 }
 
 .pagewrap {
     margin-left: auto;
     margin-right: auto;
 }
-
+/*Collapse Grid Demonstrationer*/
+#grid_demo_html {
+    border: none;
+    outline: none;
+    background-color: darkslategray;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+/*Collapse Grid Demostrationer*/
 .dropdown-menu .nav {
-    color: darkslategray;
+    color: darkslategray !important;
     font-size: 0.8em;
 }
 
@@ -67,6 +89,11 @@ hr {
 }
 
 /* CSS Animation for Burgermenu */
+
+.icon-bar {
+    color: #FFF !important;
+    background-color: #FFF !important;
+}
 
 .navbar-toggle .icon-bar:nth-of-type(2) {
     top: 1px;
@@ -87,7 +114,7 @@ hr {
 }
 
 .navbar-toggle.active .icon-bar:nth-of-type(2) {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .navbar-toggle.active .icon-bar:nth-of-type(3) {

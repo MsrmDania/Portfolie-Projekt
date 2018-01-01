@@ -140,10 +140,72 @@
         <div class="col-xs-12 col-sm-9">
             <h3>CSS Grids</h3>
             <section>
-                <p>CSS Grids er den seneste store udviking og den nye standard inden for CSS og bliver som omtalt som revolutionerende inden for sin responsive designteknik.</p>
+                <p>CSS Grids er den seneste store udviking og den nye standard inden for CSS og bliver som omtalt som revolutionerende inden for sin responsive designteknik.<br>Før introduktionen til CSS Grids, havde der aldrig været en "god" måde at placere elementer i CSS før. Før Grids blev Float konstant anvendt, som er kendt for at være en positionerings "hack".<br>Float og Clear er meget om at arbejde i trial og error.</p>
+                <p>CSS Grids bygger på FLEXBOX, men er egnet til at håndtere to dimensioner istedet for FLEXBOX's ene. </p>
+                <h4>Eksempel på CSS Grid</h4>
+                <div id="kode_demo">
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#grid_demo_html">HTML Grid Eksempel</button>
+                    <div id="grid_demo_html" class="collapse">
+                        <p class="demobox">
+                            &lt;!DOCTYPE html&gt;<br> &lt;html lang="da"&gt;<br> &lt;head&gt;
+
+                            <br> &lt;meta charset="utf-8"&gt;<br> &lt;title>CSS Grid-eksempler&lt;/title&gt;<br> &lt;link rel="stylesheet" href="mit.css"&gt;<br> &lt;/head&gt;
+                            <br> &lt;body&gt;
+
+                            <br> &lt;div id="mitgrid"&gt;<br> &lt;div id="felt1"&gt;1<br> &lt;/div&gt;
+                            <br> &lt;div id="felt2"&gt;2<br> &lt;/div&gt;
+                            <br> &lt;div id="felt3"&gt;3<br> &lt;/div&gt;
+                            <br> &lt;div id="felt4"&gt;4<br> &lt;/div&gt;
+                            <br> &lt;div id="felt5"&gt;5<br> &lt;/div&gt;
+                            <br> &lt;div id="felt6"&gt;6<br> &lt;/div&gt;
+                            <br> &lt;div id="felt7"&gt;7<br> &lt;/div&gt;
+                            <br> &lt;div id="felt8"&gt;8<br> &lt;/div&gt;
+                            <br> &lt;/div&gt;
+
+
+                            <br>
+                            <!-- mitgrid -->
+                            &lt;/body&gt;<br> &lt;/html&gt;
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#grid_demo_css">CSS Grid Eksempel</button>
+                    <div id="grid_demo_css" class="collapse">
+                        <p class="demobox">
+
+                            #mitgrid {<br> display: grid; <br> grid-gap: 5px;<br> grid-template-columns: 1fr 1fr 1fr 1fr;<br> grid-template-rows: 2fr 2fr 1fr 1fr;<br> grid-template-areas: <br> "a a a a"<br> "b e e c"<br> "d e e c"<br> "d f g c"<br> "h h h h"<br> }
+                            <br> #mitgrid div:nth-child(1){<br> background-color: #FFF;<br> grid-area: a;<br> }
+                            <br> #felt2 {<br> grid-area: d;<br> }
+                            <br> #mitgrid div:nth-child(3){<br> background-color: #FC0;<br> grid-area: c;<br> }
+                            <br> #felt4 { background-color: #F06;<br> grid-area: b;<br> }
+                            <br> #felt5 {<br> background-color: #63F;<br> grid-area: e;<br> }
+                            <br> #felt6 {<br> grid-area: f;<br> }
+                            <br> #felt7 {<br> grid-area: g;<br> }
+                            <br> #felt8{
+
+                            <br> background-color: #CF0; <br> grid-area: h;<br> }
+                            <br>
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Resultat</h4>
+                        <img src="../grafik/grid%20resultat.png" class="grafik" alt="Et Billede af CSS Grid">
+                        <h4>Andre Eksempler på Grids</h4>
+                        <img src="../grafik/grido1.png" class="grafik" alt="Et Billede af CSS Grid">
+                        <img src="../grafik/grido2.png" class="grafik" alt="Et Billede af CSS Grid">
+                        <img src="../grafik/grido3.png" class="grafik" alt="Et Billede af CSS Grid">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <h3>Kilder</h3>
+            <section class="kildefelt">
+                <p>Niels Østergaard - Interaktionsudvikling - Erhvervs Akadami Dania Skive</p>
             </section>
         </div>
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Til top">Top</button>
+    <footer>Maiken Mikkelsen - 1. Semester Multimediedesigner</footer>
 </body>
 
 </html>
