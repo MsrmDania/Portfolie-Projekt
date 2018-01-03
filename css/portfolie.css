@@ -26,7 +26,7 @@ h4 {
 }
 
 p {
-    margin: 0.5em;
+    margin: auto;
 }
 
 button {
@@ -50,21 +50,33 @@ button {
     display: inline-block;
     width: 200px;
     height: 200px;
-    padding: 0.4em;
+    padding: 0.7em;
 }
 
 .grafik_stor {
     width: 100%
 }
 
+#mig {
+    display: block;
+    margin: auto;
+    border: 1em darkslategray;
+    border-style: solid;
+}
+
+#forsidebox {
+    display: block;
+    margin: auto;
+    padding: 3em;
+}
 
 #kode_demo {
     position: relative;
 }
 
 .pagewrap {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 /*Collapse Grid Demonstrationer*/
 #grid_demo_html {
@@ -91,6 +103,7 @@ hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: clear;
 }
 
 /* CSS Animation for Burgermenu */
